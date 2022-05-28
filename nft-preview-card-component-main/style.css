@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0d1a2d;
+    margin-top: 40px;
+    margin: 40px;
+}
+div.container{
+    width: 25%;
+    margin: auto;
+    background: #15273f;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    /* box-shadow: ; */
+}
+.head {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    
+}
+div.container .head > img{
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.head .eyes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: hsl(228, 45%, 44%); */
+    background:  #2ddde7;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+/* .container:hover .eyes {
+    visibility: visible;
+} */
+.head:hover .eyes{
+    visibility: visible;
+}
+
+div.content{
+    margin-top: 5px;
+}
+h2{
+    color: white;
+    margin-top: 5px;
+}
+h2:hover {
+    color: #2ddde7;
+}
+p{
+    color: #7f94af;
+    margin-top: 5px;
+}
+div.eth-value{
+    display: flex;
+    /* align-items: center; */
+    /* align-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div.eth-value p{
+    color: #2ddde7;
+}
+div.final{
+    margin-top: 05px;
+    display: flex;
+    align-items: center;
+    
+}
+div.final img.profile{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+div.attribution{
+    margin-top: 20px;   
+}
+span{
+    color: #fff;
+}
+
+@media  screen and (max-width:400px) {
+    div.container{
+        width: 90%;
+    }
+    
+}
+@media  screen and (max-width:300px) {
+    div.container{
+        width: 100%;
+    }
+    body{
+        padding: 5px;
+    }
+    
+}
+@media  screen and (max-width:800px) {
+    div.container{
+        width: 70%;
+    }
+    
+}
+/* @media screen and (max-width:600px) {
+    .center{
+        display: none;
+    }
+} */
